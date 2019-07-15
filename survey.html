@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Debate Survey</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="survey.css">
+	<link href="https://fonts.googleapis.com/css?family=Bahianita|Inconsolata|Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1 id="title">Debate Survey</h1>
+	<div id="box-outer">
+		<p id="description"><strong>Help us improve Almaty Debating Community</strong></p>
+		<form id="survey-form" method="GET" action="#">
+			<div class="row">
+				<div class="label">
+					<label for="name">Name:</label>
+				</div>
+				<div class="answer">
+					<input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="label">
+					<label for="email">E-mail:</label>
+				</div>
+				<div class="answer">
+					<input autofocus type="email" name="email" id="email" class="input-field" placeholder="Enter your e-mail" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="label">
+					<label for="age">Age:</label>
+				</div>
+				<div class="answer">
+					<input type="number" name="age" id="age" class="input-field" placeholder="Age" min="1" max="125" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="label">
+					<label for="current">What is your debating experience:</label>
+				</div>
+				<div class="answer">
+					<select id="dropdown" name="current" class="dropdown">
+						<option disabled selected value>Select an option</option>
+						<option value="novice">0-1 year</option>
+						<option value="intermediate">1-2 years</option>
+						<option value="experienced">2-3 years</option>
+						<option value="advanced">3-4 years</option>
+						<option value="alumni">Alumni</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="label label-top">
+					<label for="donation">How likely is that you would donate money towards your club's improvement:</label>
+				</div>
+				<div class="answer">
+					<ul>
+						<li class="radio"><label>Definitely<input name="radio-btn" value="1" type="radio" class="rate"></label></li>
+						<li class="radio"><label>Maybe<input name="radio-btn" value="2" type="radio" class="rate"></label></li>
+						<li class="radio"><label>Not sure<input name="radio-btn" value="3" type="radio" class="rate"></label></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="label">
+					<label for="most-like">What do you like most about debating:</label>
+				</div>
+				<div class="answer">
+					<select id="most-like" name="like" class="dropdown">
+						<option disabled selected value>Select an option</option>
+						<option value="tournaments">Tournaments</option>
+						<option value="socials">Socials</option>
+						<option value="lectures">Lectures</option>
+						<option value="communtiy">Community</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="label label-top">
+					<label for="interests">What topics are you interested in?<br>(Check all that apply):</label>
+				</div>
+				<div class="answer">
+					<ul id="interests">
+						<li class="checkbox"><label><input name="prefer" value="1" class="rate" type="checkbox">Economics</label>
+						<li class="checkbox"><label><input name="prefer" value="2" class="rate" type="checkbox">Politics</label>
+						<li class="checkbox"><label><input name="prefer" value="3" class="rate" type="checkbox">International Relations</label>
+						<li class="checkbox"><label><input name="prefer" value="4" class="rate" type="checkbox">Sociology</label>
+						<li class="checkbox"><label><input name="prefer" value="5" class="rate" type="checkbox">Philosophy</label>
+						<li class="checkbox"><label><input name="prefer" value="6" class="rate" type="checkbox">Human rights</label>
+						<li class="checkbox"><label><input name="prefer" value="7" class="rate" type="checkbox">Art & Culture</label>
+						<li class="checkbox"><label><input name="prefer" value="8" class="rate" type="checkbox">Tech</label>
+						<li class="checkbox"><label><input name="prefer" value="9" class="rate" type="checkbox">History</label>
+						<li class="checkbox"><label><input name="prefer" value="10" class="rate" type="checkbox">Law</label>	
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="label label-top">
+					<label for="suggest">Any comments or suggestions:</label>
+				</div>
+				<div class="answer">
+					<textarea id="suggest" name="comment" class="input-field" placeholder="Enter your comments here.."></textarea>
+				</div>
+			</div>
+			<button id="submit" type="submit">Submit</button>
+		</form>
+	</div> 
+</body>
+</html>
